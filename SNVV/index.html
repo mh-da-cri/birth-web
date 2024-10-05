@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng sinh nhật em yêu!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="birthday-heading">Chúc mừng sinh nhật, em yêu!</h1>
+        <p class="birthday-message">Anh chúc em yêu của anh luôn hạnh phúc, vui vẻ và ngập tràn yêu thương. Anh yêu em rất nhiều! 🎂❤️</p>
+
+        <div class="heart-container">
+            <div class="heart" id="heart1"></div>
+            <div class="heart" id="heart2"></div>
+            <div class="heart" id="heart3"></div>
+        </div>
+
+        <button class="celebrate-btn" onclick="playMusic()">Nhấn vào đây để nghe bài hát anh dành cho em!</button>
+    </div>
+
+    <audio id="birthdaySong" src="your-love-song.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById("birthdaySong").play();
+        }
+    </script>
+</body>
+</html>
